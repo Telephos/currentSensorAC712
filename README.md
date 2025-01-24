@@ -49,3 +49,9 @@ RMS current (in amperes) - To 3 decimal values
          What to do if log file already exists: *Select if you'd like to overwrite file or append to it*
         
 6) Open connection
+
+# Future revisions
+1) Rheostat or rotary encoder adjusted zero-point
+2) LCD readout
+3) 5A fusing
+4) Clean up output, time scaling.
