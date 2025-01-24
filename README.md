@@ -1,7 +1,7 @@
 ![currentSensor](https://github.com/user-attachments/assets/5c241b1c-ebe2-499f-a19f-a1f04cfac854)
 
 
-# Arduino AC Current Measurement with ADS1115 and ACS712 (5A ver)
+# AC Current Measurement & Logging with ADS1115 and ACS712 
 This project uses an Arduino and the ADS1115 ADC to calculate the RMS (Root Mean Square) current from an AC signal. The script demonstrates how to read high-precision ADC values, calibrate the sensor, and compute RMS current in real-time.
 
 A Fluke 17B+ was placed on the single phase line to compare the results. It was accurate to within 2mA in the range of 1mA to 1.2A
@@ -13,12 +13,14 @@ Custom Calibration: Includes adjustable parameters for calibration (zero-point a
 
 Real-Time Output: Outputs results via the Arduino Serial Monitor (baud rate 115200)
 
-# Components
-Arduino: Microcontroller to process the ADC data and calculate RMS current.
+# Components and Dependencies
+Arduino Uno: Microcontroller to process the ADC data and calculate RMS current.
 
 ADS1115: High-resolution ADC for precise signal conversion.
 
 ADS712: Hall-effect linear current sensor (5 amp version)
+
+Arduino Library: ADS1X15 by Rob Tillaart (https://github.com/RobTillaart/ADS1X15)
 
 # Wiring Diagram (see picture)
 Connect the analog output of the current sensor to channel 0 (AIN0) on the ADS1115.
@@ -46,3 +48,4 @@ RMS current (in amperes) - To 3 decimal values
 
          What to do if log file already exists: *Select if you'd like to overwrite file or append to it*
         
+6) Open connection
