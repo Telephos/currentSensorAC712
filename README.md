@@ -32,5 +32,17 @@ Timestamp (milliseconds) - Time since arduino powered up
 
 RMS current (in amperes) - To 3 decimal values
 
+# Logging data
 
+1) Install PuTTy (https://www.putty.org/) and start.
+2) Connection Type: Serial
+3) Serial Line: The COM port for the Arduino. You can check this in the IDE under "Tools" -> "Port" 
+4) Speed (baudrate): 115200
+5) In PuTTy, configure Logging (under "Session").
+   
+        Session Logging: All session output
+   
+        Log file name: *Configure to desired folder directory and call the file whatever you want*
 
+         What to do if log file already exists: *Select if you'd like to overwrite file or append to it*
+        
